@@ -1,0 +1,8 @@
+.file_upload_container {
+  display: flex;
+  width: 200px;
+  height: auto;
+  border: 2px dashed #ccc;
+  padding: 8px;
+  cursor: pointer;
+}
