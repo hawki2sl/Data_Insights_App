@@ -1,0 +1,68 @@
+.nav_container {
+  display: flex;
+}
+
+.hamburger {
+}
+
+.nav_list {
+  display: none;
+}
+
+.nav_list_isOpen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav_item {
+  margin-right: 8px;
+}
+
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+}
+
+/* Extra large devices (large desktops, 1366px and up) */
+@media (min-width: 1366px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+}
