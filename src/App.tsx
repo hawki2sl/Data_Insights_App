@@ -1,4 +1,4 @@
-import classes from "./Styles/App.module.css"
+import classes from "./App.module.css"
 import Home from "./Routes/Home";
 
 function App() {

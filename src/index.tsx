@@ -9,6 +9,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import RootLayout from './Routes/RootLayout';
 import ErrorPage from './Routes/ErrorPage';
+import Home from './Routes/Home';
+import FileUpload from './Routes/FileUpload';
+import InsightsDisplay from './Routes/InsightsDisplay';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,18 @@ const router = createBrowserRouter([
       {
         path: "", // Default route
         element: <App />, // Render App component at the root path
+      },
+      {
+        path: "/home",
+        element: <Home />, 
+      },
+      {
+        path: "/upload",
+        element: <FileUpload />, 
+      },
+      {
+        path: "/insights",
+        element: <InsightsDisplay />, 
       },
       // You can add more nested routes here
     ],
