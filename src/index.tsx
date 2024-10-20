@@ -1,17 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import RootLayout from './Routes/RootLayout';
-import ErrorPage from './Routes/ErrorPage';
-import Home from './Routes/Home';
-import FileUpload from './Routes/FileUpload';
-import InsightsDisplay from './Routes/InsightsDisplay';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux"; // Import Provider from react-redux
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import RootLayout from "./Layout/RootLayout";
+import ErrorPage from "./Routes/ErrorPage";
+import Home from "./Routes/Home";
+import InsightsDisplay from "./Routes/InsightsDisplay";
 
 const router = createBrowserRouter([
   {
@@ -25,27 +22,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/home",
-        element: <Home />, 
-      },
-      {
-        path: "/upload",
-        element: <FileUpload />, 
+        element: <Home />,
       },
       {
         path: "/insights",
-        element: <InsightsDisplay />, 
+        element: <InsightsDisplay />,
       },
-      // You can add more nested routes here
     ],
-  }
+  },
 ]);
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );
 

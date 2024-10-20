@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import classes from "../Styles/NavBar.module.css";
+import classes from "../../Styles/NavBar.module.css"
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -18,13 +18,8 @@ const navListItems = [
   },
   {
     id: incID(),
-    path: "/upload",
-    label: "File Upload Page",
-  },
-  {
-    id: incID(),
     path: "/insights",
-    label: "Insights Display Page",
+    label: "Insights",
   },
   {
     id: incID(),
