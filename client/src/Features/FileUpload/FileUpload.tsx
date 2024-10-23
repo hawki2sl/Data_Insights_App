@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import classes from "../Styles/FileUpload.module.css";
+import classes from "../../Styles/FileUpload.module.css"
 import { useDropzone } from "react-dropzone";
 
 const FileUploadComponent = () => {

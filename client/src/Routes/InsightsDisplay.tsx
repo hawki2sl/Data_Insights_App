@@ -1,4 +1,4 @@
-import FileUpload from "../Components/FileUpload";
+import FileUpload from "../Features/FileUpload/FileUpload";
 
 const InsightsDisplay = () => {
 
