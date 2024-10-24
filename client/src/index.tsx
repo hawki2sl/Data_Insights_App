@@ -9,6 +9,7 @@ import RootLayout from "./Layout/RootLayout";
 import ErrorPage from "./Routes/ErrorPage";
 import Home from "./Routes/Home";
 import InsightsDisplay from "./Routes/InsightsDisplay";
+import Store from "./Store/Store";
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
+    <Provider store={Store}> 
       <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 

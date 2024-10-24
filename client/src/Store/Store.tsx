@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import FileUploadSlice from "../Features/FileUpload/FileUploadSlice";
+import fileUploadReducer from "../Features/FileUpload/FileUploadSlice"; // Adjust the path if needed
 
 const Store = configureStore({
   reducer: {
-    fileUploadReducer: FileUploadSlice.reducer,
+    fileUploadReducer,
   },
 });
 
+export type RootState = ReturnType<typeof Store.getState>; // Define RootState type
 export default Store;
